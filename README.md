@@ -1,6 +1,5 @@
 # Fire–Smoke–Normal Image Classification using Transfer Learning
 
-## 🚒 Internship Deep Learning Project — Fire Hazard Monitoring System
 
 ### 🎯 Project Objective
 
