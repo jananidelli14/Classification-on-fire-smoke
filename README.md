@@ -1,7 +1,7 @@
 # Fire–Smoke–Normal Image Classification using Transfer Learning
 
 
-### 🎯 Project Objective
+###  Project Objective
 
 Build a baseline classification model to identify three classes in images:
 
@@ -13,7 +13,7 @@ This classification task is the first stage before performing object detection u
 
 ---
 
-## 🧩 Dataset Description
+##  Dataset Description
 
 * Base dataset downloaded from **Roboflow Fire & Smoke detection dataset**.
 * Original dataset contained only **Fire** and **Smoke** images.
@@ -48,7 +48,7 @@ Approximate dataset size:
 
 ---
 
-## 🔥 Why Transfer Learning (ImageNet Weights)?
+##  Why Transfer Learning (ImageNet Weights)?
 
 We use **ImageNet-pretrained weights** because:
 
@@ -64,7 +64,7 @@ Benefits:
 
 ---
 
-## 🧠 Model Architectures Evaluated
+##  Model Architectures Evaluated
 
 We fine-tuned four convolutional neural network architectures:
 
@@ -92,7 +92,7 @@ Each model was initialized with **ImageNet-pretrained weights**, and the final l
 
 ---
 
-## 🏋️‍♀️ Training Configuration
+## 🏋 Training Configuration
 
 * **Input size:** 224×224
 * **Batch size:** 16
@@ -131,7 +131,7 @@ MobileNetV2 achieved the **highest validation and test accuracy** while remainin
 
 ---
 
-## 🧪 Qualitative Testing
+##  Qualitative Testing
 
 We also tested the final MobileNetV2 model on sample images from the test set and custom images (e.g., road and forest scenes, buildings, etc.).
 
@@ -145,7 +145,7 @@ Mitigation idea:
 
 ---
 
-## 🔄 Role of Classification in the Overall Project
+##  Role of Classification in the Overall Project
 
 This classification model is a **baseline stage** before object detection:
 
@@ -160,7 +160,7 @@ Once classification performance is satisfactory (as above), the next step is to:
 
 ---
 
-## 📁 Repository Contents (Suggested)
+## Repository Contents 
 
 * `classification_training.ipynb` — Kaggle notebook with full pipeline.
 * `normal_images_backup.zip` — manually collected Normal-class screenshots (traffic, buildings, etc.).
@@ -168,9 +168,9 @@ Once classification performance is satisfactory (as above), the next step is to:
 
 ---
 
-## 🏁 Summary
+##  Summary
 
 * Built a 3-class image classifier for **Fire / Smoke / Normal**.
 * Used **ImageNet-pretrained CNNs** with transfer learning.
 * Evaluated four architectures; **MobileNetV2** performed best with ~93% validation and 95% test accuracy.
-* This provides a strong baseline and confirms that the dataset is suitable for fire/smoke recognition, supporting the next stage of YOLO-based fire and smoke detection.
+* This provides a strong baseline and confirms that the dataset is suitable for fire/smoke recognition.
